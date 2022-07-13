@@ -1,0 +1,40 @@
+{
+  "name": "holymotors-front",
+  "version": "1.0.0",
+  "description": "@0holymotors  · Business Service",
+  "author": "Holy Motors",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "svg-icon": "vsvg -s ./static/svg-icon -t ./config/vectors --es6"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/device": "^2.1.0",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/i18n": "^7.0.3",
+    "@nuxtjs/pwa": "^3.3.4",
+    "@nuxtjs/robots": "^2.5.0",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "browserslist": "^4.16.1",
+    "cross-env": "^5.2.1",
+    "express": "^4.17.1",
+    "gsap": "^3.10.4",
+    "nuxt": "^2.0.0",
+    "nuxt-gsap-module": "^1.5.0",
+    "three": "^0.128.0",
+    "vue-svgicon": "^3.2.9"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "cssnano": "^4.1.10",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1"
+  },
+  "browserslist": "defaults"
+}

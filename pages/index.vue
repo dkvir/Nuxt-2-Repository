@@ -5,7 +5,19 @@
 </template>
 
 <script>
-export default {};
+import { mapState } from "vuex";
+
+export default {
+  computed: {
+    ...mapState("pages/home", ["homeData"]),
+  },
+  mounted() {
+    console.log(this.homeData.title);
+  },
+  async fetch({ store }) {
+    await Promise.all([store.dispatch("pages/home/getHomeData")]);
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

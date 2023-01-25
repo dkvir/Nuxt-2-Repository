@@ -1,10 +1,25 @@
 const state = () => {
-  return {};
+  return {
+    homeData: null,
+  };
 };
 
-const mutations = {};
+const mutations = {
+  UPDATE_HOME_DATA(state, response) {
+    state.homeData = response.data;
+  },
+};
 
-const actions = {};
+const actions = {
+  async getHomeData({ commit }) {
+    try {
+      const { data } = await this.$axios.get("/home");
+      commit("UPDATE_HOME_DATA", data);
+    } catch (error) {
+      return console.error(error);
+    }
+  },
+};
 
 export default {
   namespaced: true,
